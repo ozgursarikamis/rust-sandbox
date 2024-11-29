@@ -1,4 +1,4 @@
-use crate::models::{ Person };
+use crate::models::{ Person, Company };
 
 mod basics;
 mod models;
@@ -14,5 +14,11 @@ fn main() {
     let age = 27;
     let ozgur = Person { first_name, age };
 
-    println!("{}|{}", ozgur.first_name, ozgur.age)
+    println!("{}|{}", ozgur.first_name, ozgur.age);
+
+    let company_name = String::from("Company ltd.");
+    let employees = 1;
+    let company = Company { name: company_name, employees };
+
+    println!("{}|{}", employees, company.name);
 }

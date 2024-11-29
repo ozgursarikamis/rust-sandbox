@@ -1,4 +1,7 @@
-pub struct Person {
-    pub first_name: String,
-    pub age: i32,
-}
+mod person;
+mod company;
+
+pub use person::Person;
+pub use company::Company;
+// or:
+// pub use person::*;
