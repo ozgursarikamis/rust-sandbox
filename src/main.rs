@@ -1,4 +1,4 @@
-use crate::control_flows::{if_else_condition, looping, return_conditionally};
+use crate::control_flows::{if_else_condition, labeling_loops, looping, return_conditionally};
 
 mod basics;
 mod control_flows;
@@ -6,4 +6,5 @@ mod control_flows;
 
 fn main() {
     looping();
+    labeling_loops();
 }
