@@ -1,17 +1,15 @@
-// use crate::models::{ Person, Company };
-
-use crate::functions::functions::{plus_one, return_values, statements_expressions};
+use crate::control_flows::{
+    if_else_condition,
+    return_conditionally
+};
 
 mod basics;
-mod models;
+mod control_flows;
 mod functions;
 
 fn main() {
-    functions::functions::callable_function(5);
-    statements_expressions();
-    println!("Return values: {}", return_values());
+    if_else_condition(4);
+    if_else_condition(6);
 
-    let mut x = 9;
-    x = plus_one(x);
-    println!("Return values: {}", x);
+    println!("returned number is: {:?}", return_conditionally());
 }
