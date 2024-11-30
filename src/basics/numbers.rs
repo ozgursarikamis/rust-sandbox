@@ -1,5 +1,3 @@
-use std::fmt::format;
-
 pub(crate) fn basic_numbers() {
        let x: i32 = 5;
        let mut y: i32 = 5;

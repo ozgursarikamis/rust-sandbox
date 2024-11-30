@@ -1,9 +1,12 @@
 // use crate::models::{ Person, Company };
 
+use crate::functions::functions::statements_expressions;
+
 mod basics;
 mod models;
+mod functions;
 
 fn main() {
-    // basics::numbers::basic_numbers();
-    basics::numbers::assert_numbers();
+    functions::functions::callable_function(5);
+    statements_expressions();
 }
