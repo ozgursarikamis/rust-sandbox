@@ -15,3 +15,11 @@ pub fn statements_expressions() {
 
     println!("The value of y is: {}", yy);
 }
+
+pub fn return_values() -> i32 {
+    5
+}
+
+pub fn plus_one(x: i32) -> i32 {
+    x + 1
+}
